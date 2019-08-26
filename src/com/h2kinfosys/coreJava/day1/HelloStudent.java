@@ -36,6 +36,11 @@ public class HelloStudent{
 	 * default - package access - all the classes within same package have access to it
 	 */
 	
+	private String privateVariable = "Private Variable Test";
+	protected String protectedVariable = "Protected Variable Test";
+	String defaultVariable = "Default Variable Test";
+	public String publicVariable = "Public Variable Test";
+	
 	// methods - data processors
 	
 	public static void main(String args[]) {
@@ -49,6 +54,12 @@ public class HelloStudent{
 		System.out.println("hello :: "  + hello.strData);
 		System.out.println("helloWorld :: "  + helloWorld.companyName);
 		System.out.println("hello :: "  + hello.companyName);
+		
+		System.out.println("hello :: "  + hello.privateVariable);
+		System.out.println("hello :: "  + hello.protectedVariable);
+		System.out.println("hello :: "  + hello.defaultVariable);
+		System.out.println("hello :: "  + hello.publicVariable);
+		
 	}
 }
 
